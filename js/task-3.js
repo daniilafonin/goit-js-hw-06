@@ -1,22 +1,22 @@
 class StringBuilder {
   constructor(value) {
-    this.value = value;
+    this.#value = value;
   }
 
   padEnd(str) {
-    this.value = this.value + str;
+    this.#value = this.#value + str;
   }
 
   padStart(str) {
-    this.value = str + this.value;
+    this.#value = str + this.#value;
   }
 
   padBoth(str) {
-    this.value = str + this.value + str;
+    this.#value = str + this.#value + str;
   }
 
   getValue() {
-    return this.value;
+    return this.#value;
   }
 }
 const builder = new StringBuilder('.');
